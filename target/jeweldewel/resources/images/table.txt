@@ -1,0 +1,40 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script>
+var prod = ${list};
+  angular.module('repeatSample', []).controller('CatogoryController', function($scope)
+   {
+                 $scope.Catagory=prod;
+   
+          $scope.sort = function(keyname)
+          {
+              $scope.sortKey = keyname;   //set the sortKey to the param passed
+              $scope.reverse = !$scope.reverse; //if true make it false and vice versa
+          }
+              
+    });
+</script>
+
+
+
+
+  <div class="container">
+<div class="span12" style="text-align: justify; font-size: large; color:silver;">
+ <div ng-app="repeatSample" ng-controller="CatogoryController">
+ <br/><br/>
+ <div class="row">
+Search:<input type=text placeholder="Search" ng-model="searchText"/>
+</div>
+<div id="headin2"><strong> <h3>Catagory List </h3></strong></div>
+
+<table width=\"100%\" border=\"0\" id=\"tab\">
+<tr><th id=\"td1\">CATEGORY ID</th><th id=\"td2\">CATAGORY NAME</th>
+              <th id=\"td3\">DISCRIPTION</th><th id=\"td4\">EDIT</th><th id=\"td5\">DELETE</th>
+ </tr>
+ <tr class="success" ng-repeat="Catagory in Catagory|filter:searchText">
+ <td>"{{Catagory.cid}}"</td><td>"{{Catagory.cname}}"</td><td>"{{Catagory.desc}}"</td>
+ <td><link type="button" name="edit" value="Edit"/></td>
+<td><link type="button" value="Delete" name="delete" ></td></tr>
+</table>
+</div>
+</div>
+</div>
