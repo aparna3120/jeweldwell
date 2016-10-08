@@ -17,20 +17,16 @@ var prod = ${cart};
  </script> -->
 
  <div class="container">
-<%-- <c:choose>
-<c:when test="${empty count}">
-List is empty
-</c:when>
-<c:otherwise> --%>
+
   <form:form class="form-horizontal" method="get" action="updateqty"> 
  
-<table id="cart" border="1" bordercolor="#ffffff" >
+<table id="cart" border="1" bordercolor="purple" >
     				<thead>
-						<tr  style="font-size: medium; color: white;">
+						<tr  style="font-size: medium; color: blck;">
 							<th style="width:50%">Product</th>
 							<th style="width:10%">Price</th>
 							<th style="width:8%">Quantity</th>
-							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:22%" class="text-center">Total</th>
 							<th style="width:10%"></th>
 						</tr>
 					</thead>
@@ -39,7 +35,7 @@ List is empty
 						<form action="updateqty" method="get">
 						<tr>
 						
-							<td data-th="Product" style="font-size: medium; color: white;">
+							<td data-th="Product" style="font-size: medium; color: black;">
 								<div class="row center">
 								</br>
 								<div align="center">
@@ -49,13 +45,13 @@ List is empty
 									</div>										
 								</div>
 							</td>
-							<td data-th="Price"  style="font-size: medium; color: white;">${ci.price}</td>
+							<td data-th="Price"  style="font-size: medium; color: black;">${ci.price}</td>
 							<td data-th="Quantity"  style="font-size: medium; color: black;">
 								<input type="text" name="qty" value="${ci.qty}" />
 							
 							
-							<input type="hidden" name="pid" value="${ci.pid}"/> <input type="submit" value="update"></td>
-							<td data-th="Subtotal" class="text-center"  style="font-size: medium; color: white;">${ci.qty*ci.price}</td>
+							<input type="hidden" name="pid" value="${ci.pid}"/> <input type="submit" value="Quantity"></td>
+							<td data-th="Subtotal" class="text-center"  style="font-size: medium; color: black;">${ci.qty*ci.price}</td>
 							<td class="actions" data-th="">
 							
 								<a class="btn btn-danger btn-sm"  href="removeitem?pid=${ci.pid}"><i class="fa fa-trash-o"></i></a>
@@ -79,7 +75,7 @@ List is empty
 							<td><a align="center" href="FullProduct"><img height="40" width="150" src="resources/continue.png"/></a></td>
 							<td colspan="2" class="hidden-xs"></td>
 							<td class="hidden-xs text-center"><font color="#ffffff"><strong>Total:${sessionScope.gtotal}</strong></font></td>
-							<td><a align="center" href="billingAddress"><img height="40" width="150" src="resources/checkout.gif"/></a></td>
+							<td><a align="center" href="checkout-flow"><img height="40" width="150" src="resources/checkout.png"/></a></td>
 						</tr>
 					</tfoot>
 				</table>
@@ -188,7 +184,7 @@ List is empty
 
 (value)" min="1">
 							</td>
-							<td data-th="Subtotal" class="text-center"  style="font-size: medium; color: white;">
+							<td data-th="Subtotal" class="text-center"  style="font-size: medium; color: black;">
 
 {{value*ci.price}}</td>
 							<td class="actions" data-th="">
@@ -199,7 +195,7 @@ List is empty
 					</tbody>
 					<tfoot>
 					<tr class="visible-xs">
-							<td class="text-center"  style="font-size: medium; color: white;" ng-model="total"><strong>Total: 
+							<td class="text-center"  style="font-size: medium; color: black;" ng-model="total"><strong>Total: 
 
 </strong></td>
 						</tr>

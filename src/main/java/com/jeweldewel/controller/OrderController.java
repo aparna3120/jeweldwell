@@ -43,7 +43,7 @@ public class OrderController
 	
 		c.clear();
 		session.setAttribute("mycart", c);
-		return "receipt";
+		return "placeorder";
 		
 	}
 	

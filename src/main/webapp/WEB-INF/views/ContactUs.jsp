@@ -5,15 +5,16 @@
 
 <jsp:include page="CommonHeader.jsp"></jsp:include>
 <div align="center">
-<img  src="resources/eleventh.jpg" class="img-responsive" width="550" height="200"/>
-</div>
-<img src="resources/contact1.jpg" align="justify" width="150" />
+<!-- <img  src="resources/eleventh.jpg" class="img-responsive" width="550" height="200"/> -->
+<!-- </div> -->
+<!-- <img src="resources/contact1.jpg" align="justify" width="150" /> -->
 <div class="container" >
 <div class="col-md-5"  >
     <div class="form-area" >  
       <form method="post" action="sendEmail">
         <br style="clear:both">
-                    <h3 style="margin-bottom: 25px; text-align: center;"><font color="white">Contact Form</font></h3>
+                    <h3 style="margin-bottom: 25px; text-align: center;"><font color="purple">Contact Form</font></h3>
+                    <font color="purple">We welcome your queries, suggestion or complaints.</font><br>
     				<div class="form-group">
 						<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
 					</div>
@@ -28,12 +29,12 @@
 					</div>
                     <div class="form-group">
                     <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                        <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+                                       
           
                    </div>
          <div align="left">   
          
-        <button style="background-color:#000000"  type="button" id="submit" name="submit" class="btn btn-primary center-block">Submit Form</button>
+        <button style="background-color:purple"  type="button" id="submit" name="submit" class="btn btn-primary center-block">Submit Form</button>
         </div>
         
         </form>

@@ -69,37 +69,51 @@ jQuery(window).load(function () {
  <link style><h5 style="color:white">Register</h5></link></a>-->
   
  </div>     
-<a class="fa fa-facebook-square"style="font-size:25px;color:white"  href="https://www.facebook.com" target="_blank"></a>
+<!-- <a class="fa fa-facebook-square"style="font-size:25px;color:white"  href="https://www.facebook.com" target="_blank"></a>
 <a href="https://twitter.com/" style="font-size:25px;color:white"  class="fa fa-twitter" target="_blank"></a> 
 <a href="https://www.google.com/"  style="font-size:25px;color:white" class="fa fa-google-plus-square" target="_blank"></a>
-<img align="left" src="resources/mobilecafe.PNG" class="img-responsive" width="300" height="100"/>
+ -->
 </div>
 <div align="right">
-<!-- nput align= style="input" type="text" name="search" placeholder="Search..">-->
+
 </div>
 <br/>
 </div>	
 
-<body background="resources/photo-background-images-3.jpg">
-			
+<body background="resources/purplebg.jpg">
+<img src="./resources/logofinal.png"/>			
 
    <nav class="navbar navbar-inverse">
    <div class="container-fluid">
-  
-  
-
-  
-   
-   
+     
   <ul class="nav navbar-nav">
   <c:choose>
     			<c:when test="${sessionScope.UserLoggedIn == null}">
-    		
+    		<li><font color="#ffffff">JewelDwell....add class to your style </font></li>
        				<li><a class="active" href= "<c:url value="/"/>"><font color="#ffffff">Home</font></a></li>
-                	<li><a href="AboutUs"><font color="#ffffff">About</font></a></li>
-                	<li><a href="ContactUs"><font color="#ffffff">Contact</font></a></li>
-                	<li><a href="FullProduct"><font color="#ffffff">Products</font></a></li>
-	                <li><a href="Login"><font color="#ffffff">Login</font></a></li>
+                	<li align="right"><a href="AboutUs"><font color="#ffffff">About</font></a></li>
+                	<li align="right"><a href="ContactUs"><font color="#ffffff">Contact</font></a></li>
+                	<li align="right"><a href="FullProduct"><font color="#ffffff">Products</font></a></li>
+	                <li align="right"><a href="Login"><font color="#ffffff">Login</font></a></li>
+	                <li align="right"><a href="Register"><font color="#ffffff">Register</font></a></li>
+	                <font color="#ffffff" align="right"><ul>
+        <% Integer hitsCount =(Integer)application.getAttribute("hitCounter");
+    if( hitsCount ==null || hitsCount == 0 )
+    {
+              hitsCount = 1;
+    }
+    else
+    {
+       
+       hitsCount += 1;
+    }
+    application.setAttribute("hitCounter", hitsCount);
+%>
+
+Total views : <%= hitsCount%></font>
+ </div>
+ </li>     
+  </ul></font></a></li>
 	          
     			</c:when>
     			<c:when test="${sessionScope.UserLoggedIn != null}">

@@ -103,7 +103,7 @@ select
 
 <jsp:include page="CommonHeader.jsp"></jsp:include>
   <br/><br/><br/><br/>
-  <form action="placeorder">
+  <form action="${flowExecutionUrl}&_eventId=placeorder">
  <div class="container" style="min-height: 700px;">
     <div class="theCard">
       <figure class="theCardFront">

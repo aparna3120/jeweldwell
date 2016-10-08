@@ -72,7 +72,7 @@ public class CartController
 		session.setAttribute("userdetails1",a);
 		session.setAttribute("userdetails",l1);
 		session.setAttribute("gtotal",getTotal(cartobj));
-		return "checkout";
+		return "confirmed";
 	}
 	
 	@RequestMapping(value="/billingAddress",method = RequestMethod.GET)

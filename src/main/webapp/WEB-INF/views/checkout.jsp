@@ -49,9 +49,10 @@ var prod1=${userdetails};
 	<td>
 			<div>
 						<span>Name:{{User.name}}</span><br/>
-						<span>Address:{{User.Address}}</span><br/>
 						<span>PhoneNo.:{{User.number}}</span><br/>
 						<span>EmailId:{{User.email}}</span><br/>
+						<span>Address:{{User.Address}}</span><br/>
+						<span>Address:{{User.Address}}</span><br/>
 			</div>
 	</td>
 	</tr>
@@ -62,10 +63,10 @@ var prod1=${userdetails};
 		</td>
 	</tr>
 	<tr>
-		<td><a href="payment" class="btn btn-success btn-block">Proceed To Payment <i class="fa fa-angle-right"></i></a></td>
+		<td><a href="${flowExecutionUrl}&event_id=dopay" class="btn btn-success btn-block">Proceed To Payment <i class="fa fa-angle-right"></i></a></td>
 	</tr>
 	<tr>
-		<td><a href="cart" class="btn btn-success btn-block">Back To Cart <i class="fa fa-angle-right"></i></a></td>
+		<td><a href="${flowExecutionUrl}&event_id=backtocart" class="btn btn-success btn-block">Back To Cart <i class="fa fa-angle-right"></i></a></td>
 	</tr>
 </table></div></article></div>
 

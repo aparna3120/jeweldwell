@@ -31,7 +31,7 @@ $( document ).ready(function() {
     {
     	alert("welcome");
     	var pwd=document.getElementById("pwd");
-    	var cpwd=document.getElementById("pwd");
+    	var cpwd=document.getElementById("cpwd");
     	if(pwd==cpwd)
     		{
     		return true;
@@ -42,7 +42,7 @@ $( document ).ready(function() {
     		    		return false;
     		}
     }
-    </script>j
+    </script>
 		
 		<title>Register Form</title>
 
@@ -123,7 +123,7 @@ input::-webkit-input-placeholder {
 			<div class="row main">
 				<div class="panel-heading">
 	               <div class="panel-title text-center">
-	               		<h3><u><font color="white">Register Here...Its Free!!!</font></u></h3>
+	               		<h3><u><font color="purple"><strong>Register Here</strong></font></u></h3>
 	               		<hr />
 	               	</div>
 	            </div> 
@@ -131,31 +131,31 @@ input::-webkit-input-placeholder {
 					<form:form action="Register" commandName="Register" method="POST" onsubmit="return validate">
 						
 						<div class="form-group">
-							<label >Enter your Name</label>
+							<label >Enter Name</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="name" id="name"  placeholder="Name" path="name" pattern="[a-zA-Z]"/>
+									<form:input type="text" required="true" class="form-control" name="name" id="name"  placeholder="Enter Name" path="name" />
 								</div>
 							</div>
 						</div>
 							
 							<div class="form-group">
-							<label>Enter your Username<label>
+							<label>Enter Username<label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="uname" id="uname"  placeholder="User Name" path="username" min="6" max="16"/>
+									<form:input type="text"  required="true" class="form-control" name="uname" id="uname"  placeholder="Enter Username" path="username" pattern=".{5,10}" title="minimum length for username is 5"/>
 								</div>
 							</div>
 						</div>						
 
 						<div class="form-group">
-							<label >Enter your Email</label>
+							<label >Enter Email</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="email" id="email"  placeholder="Email ID" path="email" />
+									<form:input type="text" required="true" class="form-control" name="email" id="email"  placeholder="Enter email ID" path="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
 								</div>
 							</div>
 						</div>
@@ -164,7 +164,7 @@ input::-webkit-input-placeholder {
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="mobno" id="mobno"  placeholder=" Mobile No" path="mobno" pattern="[9|8|7][0-9]{9}"/>
+									<form:input type="text" required="true" class="form-control" name="mobno" id="mobno"  max="10" placeholder="Enter Mobile No" path="mobno"/>
 								</div>
 							</div>
 						</div>
@@ -175,7 +175,7 @@ input::-webkit-input-placeholder {
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<form:input type="password" class="form-control" name="pwd" id="pwd"  placeholder=" Password" path="password" pattern="[a-zA-Z0-9@$_]"/>
+									<form:input type="password"  required="true" class="form-control" name="pwd" id="pwd"  placeholder=" Password" path="password"/>
 								</div>
 							</div>
 						</div>
@@ -185,7 +185,7 @@ input::-webkit-input-placeholder {
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="last_name" id="cpwd"  placeholder=" Confirm Password " path="password"/>
+									<input type="password" required="true" class="form-control" name="last_name" id="cpwd"  placeholder=" Confirm Password " path="password"/>
 								</div>
 							</div>
 						</div>
@@ -194,14 +194,14 @@ input::-webkit-input-placeholder {
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<form:input type="textarea" class="form-control" name="last_name" id="lname"  placeholder="Contact Address	" path="addrs"/>
+									<form:input type="textarea" required="true" class="form-control" name="last_name" id="lname"  placeholder="Contact Address	" path="addrs"/>
 								</div>
 							</div>
 						</div>
 						
 
 						<div class="form-group ">
-							<form:button style="background-color:#000000" type="submit" class="btn btn-primary btn-lg btn-block login-button">Register</form:button>
+							<form:button  style="background-color:#000000" type="submit" class="btn btn-primary btn-lg btn-block login-button">Register</form:button>
 						</div>
 						<div class="login-register">
 				            <a href="login.jsp">Login</a>

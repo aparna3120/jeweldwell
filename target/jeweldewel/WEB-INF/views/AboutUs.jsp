@@ -5,15 +5,19 @@
 
 <jsp:include page="CommonHeader.jsp"></jsp:include>
 <div align="center">
-<img  src="resources/eleventh.jpg" class="img-responsive" width="550" height="200"/>
+<!-- <img  src="resources/back1.jpg" class="img-responsive" width="550" height="200"/> -->
 </div>
 <br/>
-<br/><br/><font color="white">
-<div align="justify">
-<p>In February 2000, using savings and some capital from family, Sathish opened Chennai's first large-format mobile retail store in an upscale location in Chennai, India. Since then, Sathish and Mobile Cafe have been cresting the wave of the Indian mobile revolution from the retailing front, growing and evolving to become India's largest mobile retailer and one of India's best known brands.</p>
-<p>A strong believer in mind share, Sathish Babu has consistently promoted the Mobile Cafe brand through the various mass media available to him. Using a clever mix of targeted advertising campaigns and promotions aimed at localities as well as generations, UniverCell is well entrenched in the hearts and minds of the Indian consumer. One can see and feel its presence through its large format retail outlets as well as in print, television, cinema, special event promotions, billboards and FM radio.</p>
-<p>Determined to take Mobile Cafe and mobile phone retailing to the heights of excellence, Sathish constantly looks to incorporate innovative modern retailing concepts into his own organization. The series of core improvements initiated five years ago has now resulted in a world-class retailing organization that is powered as much by technology as by its people. The foundation for growth well in place, UniverCell has its sights on replicating its success Pan India. These same investments in technology and processes have earned UniverCell the ISO 9000-2001 certification (March 2004) for quality management systems.</p>
-<p>Strong relationships with all the manufacturers, the e-portal @ www.mobilecafe.in its pan Indian presence, MobilCafe has been able to leverage efficiencies of scale, providing the highest levels of service and options to consumers. UniverCell presenting a single face to its customers assures the same level of support (warranties, service, etc) from every single outlet across the country.</p>
-</div></font>
-<br></br><br></br>
+<br/><br/><font color="purple">
+<center><b><h1>About Us</h1></b></center>
+ <font color="purple">  Established in 2014, JewelDwell is India's No.1 online jewellery destination that showcases high quality fine jewellery with strikingly exquisite designs.
+
+We aim at revolutionizing real jewellery and lifestyle scenario in India with a firm focus on craftsmanship, quality and user experience. In a short span of time BlueStone has built a large family of loyal consumers in India and abroad.
+
+We house more than 4000 unique designs for you to choose from. All these designs are crafted to perfection with utmost care giving you the flexibility to customize the product's gold purity and colour or diamond clarity to suit your needs.
+
+With an in-house award-winning design team that pays great attention to detail, each of our product is a symbol of perfection. With cutting edge innovation and latest technology usage, we make sure the brilliance is well reflected in all our jewellery.
+
+We also offer some of the industry first options to our customers. Right from the 30 Day Money Back Policy, Certified Jewellery and Lifetime Exchange, you also get the ease of experiencing luxury shopping from the comfort of your home with our special Home Try-On service.
+</font>
 <jsp:include page="CommonFooter.jsp"></jsp:include>

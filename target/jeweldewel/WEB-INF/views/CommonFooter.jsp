@@ -32,23 +32,7 @@
 <li ><a href="#"><img src="#"></a></li>
 <li class="active"><a href="recommendfreind">Recommend To Friend</a></li>
         </ul>
-        <ul>
-        <li><% Integer hitsCount =(Integer)application.getAttribute("hitCounter");
-    if( hitsCount ==null || hitsCount == 0 )
-    {
-              hitsCount = 1;
-    }
-    else
-    {
-       
-       hitsCount += 1;
-    }
-    application.setAttribute("hitCounter", hitsCount);
-%>
-<div align="center">
-<p><font color="white" size="4">Total views : <%= hitsCount%></font></p></font>
- </div>
- </li>       
+        
         
  <ul class="nav navbar-nav navbar-right">
  <li><a href="https://www.facebook.com/login/" class="btn btn-social-icon btn-lg btn-facebook"><i class="fa fa-facebook"></i></a></li>

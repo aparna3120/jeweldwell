@@ -23,9 +23,11 @@
 	<div class="container">
 	<div class="row">
     <div class="col-lg-12">
+    <h2><font color="purple"><u>Rings</u></font></h2>
     <div ng-app="viewProduct1" ng-controller="ProductController">
 	<div  class ng-repeat="prod in Product">
 	<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	
       <a class="thumbnail"  href="ProductDescription?id={{prod.pid}}">
         <p>{{prod.pname}}</p> 
   <img class="img-responsive" src="resources/{{prod.pid}}.jpg" style="width: 150px; height: 170px"/>

@@ -50,9 +50,9 @@ public class RegisterDAO
 	{
 		
 		Session session = sessionFactory.openSession();
-	      Transaction tx = session.getTransaction();
+	      Transaction tx = session.beginTransaction();
 	      tx.begin();
-	      Register uc=(Register) session.get(Register.class,username);
+	      Register uc=(Register) session.load(Register.class,username);
 	      System.out.println(uc);
 	      tx.commit();
 	      return uc;

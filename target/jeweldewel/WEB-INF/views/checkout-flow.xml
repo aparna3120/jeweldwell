@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+    <var name="order" class="com.jeweldewel.model.Orders" />
+    <var name="Address" class="com.jeweldewel.model.Address" />
+    
+    <view-state id="bill" view="billingAddress.jsp">
+        <transition on="confirmed" to="pay" />
+    </view-state>
+    <view-state id="pay" view="payment.jsp">
+        <transition on="placorder" to="receipt" />
+    </view-state>
+    <view-state id="receipt" view="receipt.jsp">
+        <transition on="success" to="thank" />
+    </view-state>
+    <end-state id="thank" view="thankcustomer.jsp"></end-state>
+</flow>

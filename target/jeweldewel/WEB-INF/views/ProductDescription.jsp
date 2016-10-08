@@ -20,22 +20,25 @@
 <jsp:include page="CommonHeader.jsp"></jsp:include>
 <br/><br/><br/><br/>
 <!-- <body background=" resources/admin1.jpg">-->
-<div class="bg-content" bgcolor="#ffffff">
+<div class="bg-content" bgcolor="black">
 	<form:form commandName="Product">
 	
 		<div ng-app="addtocart" ng-controller="ProductController">
 		<table width="100%" bgcolor="#ffffff">
+		<tr><h2 align="left""><B><font color="Purple"><u>Product Description</u></font></B></h2></tr>
 		<tr>
-			<td align="center">
-			 	<img src="resources/{{Product.pid}}.jpg" style="width: 200px; height: 220px" alt="error" height="300" width="300"/>
+					<td align="center">
+					<div class="img-hover">
+			 	<img src="resources/{{Product.pid}}.jpg" style="width: 200px; height: 220px" alt="error" height="300" width="300"/></div>
 			</td>
+			
 			<td>
-				<h2 align="center""color:black"><B><font color="#ffffff">Product Description</font></B></h2>
+				
 				<br/>
-				<p class="caption"><p><font color="#ffffff">Product Name:{{Product.pname}}</font></p></p>
-				<p class="caption"><p><font color="#ffffff">Product Available:{{Product.pquan}}</font></p></p>
-				<p class="caption"><p><font color="#ffffff">Price:Rs.{{Product.pcost}}/-</font></p></p>
-				<p class="caption"><p><font color="#ffffff">Product Description:{{Product.pdesc}}</font></p></p>
+				<p class="caption"><p><font color="black">Product Name:{{Product.pname}}</font></p></p>
+				<p class="caption"><p><font color="black">Product Available:{{Product.pquan}}</font></p></p>
+				<p class="caption"><p><font color="black">Price:Rs.{{Product.pcost}}/-</font></p></p>
+				<p class="caption"><p><font color="black">Product Description:{{Product.pdesc}}</font></p></p></font>
 			</td>
 		</tr>
 	
@@ -44,7 +47,7 @@
 			<td>
 			</br>
 			</br>
-			<a align="center" href="addcart?adpid={{Product.pid}}"><img height="40" width="150" src="resources/addtocart.jpg"/></a>
+			<a align="center" href="addcart?adpid={{Product.pid}}"><img height="40" width="150" src="./resources/addtocart.png"/></a>
 			</td>
 			<td>
 			</br>

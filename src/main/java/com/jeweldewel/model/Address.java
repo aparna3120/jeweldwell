@@ -1,7 +1,11 @@
 package com.jeweldewel.model;
 
-public class Address 
+import java.io.Serializable;
+
+public class Address implements Serializable
 {
+	private static final long serialVersionUID=2L;
+	
 	private String name;
 	private long number;
 	private String email;

@@ -19,15 +19,7 @@ public class CategoryController
 	@Autowired
 	CategoryDAO cdao;
 	
-	public String getdata()
-	{
-		ArrayList list=(ArrayList)cdao.showCategory();
-		Gson gson = new Gson();
-		String jsonInString = gson.toJson(list);
-		return jsonInString;
-	}
-	
-	
+		
 	@RequestMapping(value="/AddCategory",method=RequestMethod.GET)
 	public ModelAndView showCategory(Model m)
 	{
@@ -91,6 +83,15 @@ public class CategoryController
 		ModelAndView mv=new ModelAndView("ViewCategory","ViewCategory",new Category());
 		return mv;
 	}
+	public String getdata()
+	{
+		ArrayList list=(ArrayList)cdao.showCategory();
+		Gson gson = new Gson();
+		String jsonInString = gson.toJson(list);
+		return jsonInString;
+	}
+	
+
 	
 }
 

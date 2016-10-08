@@ -37,7 +37,7 @@ public class LoginController
 	@RequestMapping(value = "/loginsuccess")
 	public String login_session_attributes(HttpSession session,Model model) 
 	{
-		System.out.println("Hai..Am");
+		//System.out.println("Hello");
 		String userid = SecurityContextHolder.getContext().getAuthentication().getName();
 		
 		Collection<GrantedAuthority> authorities = (Collection<GrantedAuthority>) SecurityContextHolder.getContext().getAuthentication().getAuthorities();

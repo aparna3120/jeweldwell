@@ -23,8 +23,6 @@ public class ProductDAO
 	
 	public void addProduct(Product p)
 	{
-	
-		
 		System.out.println(p.getPname());
 		try
 		{

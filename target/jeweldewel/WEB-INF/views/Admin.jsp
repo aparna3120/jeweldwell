@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Admin_View Mobile Cafe</title>
+<title>Admin PAge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -37,7 +37,7 @@ input[type=text]:focus {
 <a class="fa fa-facebook-square"style="font-size:25px;color:white"  href="https://www.facebook.com" target="_blank"></a>
 <a href="https://twitter.com/" style="font-size:25px;color:white"  class="fa fa-twitter" target="_blank"></a> 
 <a href="https://www.google.com/"  style="font-size:25px;color:white" class="fa fa-google-plus-square" target="_blank"></a>
-<img align="left" src="resources/mobilecafe.PNG" width="350" height="100"/>
+<img align="left" src="" width="350" height="100"/>
 </div>
 <div align="right">
 
@@ -54,7 +54,7 @@ input[type=text]:focus {
 </div>
   </div>
   
-<body background=" resources/admin1.jpg">
+<body background="./resources/background1.jpg">
 			
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -90,8 +90,8 @@ input[type=text]:focus {
   
   </div>
 </nav>
-<div align="center">
+<!-- <div align="center">
     <img  src="resources/eleventh.jpg" class="img-responsive" width="500" height="200"/>
-    </div>
+    </div> -->
     <br/><br/><br/>	
 </div>

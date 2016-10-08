@@ -12,11 +12,11 @@
 			<div class="col-sm-6 col-md-4 col-md-offset-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<strong> Sign in to continue</strong>
+						<strong> Sign Up here</strong>
 					</div>
 					<br/>
 					<div align="center">
-					<img src="resources/login1.png"/>
+					
 					</div>
 					<div class="panel-body">
 						<form action="perform_login" method="post">
@@ -46,7 +46,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<input style="background-color:#000000" type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
+											<input style="background-color:purple" type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
 										</div>
 									</div>
 								</div>
@@ -55,9 +55,9 @@
 					</div>
 					</div>
 					<div class="panel-footer ">
-						Don't have an account! <a href="Register" onClick=""> Sign Up Here </a>
+						New User? <a href="Register" onClick=""> Sign Up Here </a>
 						</br>
-						Forget Password!!<a href="ForgetPassword" onClick="">Click here..</a>
+						Forgot Password?<a href="ForgetPassword" onClick="">Click here..</a>
 					</div>
 					
                 </div>
