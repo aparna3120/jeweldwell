@@ -150,15 +150,7 @@ input::-webkit-input-placeholder {
 				<div class="main-login main-center">
 					 <form:form method="POST" modelAttribute="prdt" enctype="multipart/form-data">
 						
-						<!-- <div class="form-group">
-							<label >Product ID</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i aria-hidden="true"></i></span>
-									  <form:input type="text" path="pid"  class="form-control" name="name" id="name"  />
-								</div>
-							</div>
-						</div>-->
+						
 							
 							<div class="form-group">
 							<label>Product Name<label>

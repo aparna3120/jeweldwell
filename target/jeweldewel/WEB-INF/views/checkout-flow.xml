@@ -12,8 +12,9 @@
     <view-state id="pay" view="payment.jsp">
         <transition on="placorder" to="receipt" />
     </view-state>
-    <view-state id="receipt" view="receipt.jsp">
+    <end-state id="receipt" view="externalRedirect:contextRelative:index.jsp"></end-state>
+    <!-- <view-state id="receipt" view="receipt.jsp">
         <transition on="success" to="thank" />
     </view-state>
-    <end-state id="thank" view="thankcustomer.jsp"></end-state>
+    <end-state id="thank" view="thankcustomer.jsp"></end-state> -->
 </flow>

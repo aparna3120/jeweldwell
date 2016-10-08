@@ -68,7 +68,7 @@ var prod1=${orderdetail};
 	</tr>
 	<tr>
 		<td>
-				<a class="big_button" id="complete" href="${flowExecutionUrl}&event_id=success"><br/>Complete Order</a>
+				<a class="big_button" id="complete" href="${flowExecutionUrl}&_eventid=success"><br/>Complete Order</a>
 				<span class="sub"><br/>The Product Will Reach you in Weeks Time<br/><br/></span> 
 		</td>
 	</tr>

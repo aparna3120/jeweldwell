@@ -25,7 +25,7 @@
                     <br>
                     <!-- <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label> -->
                 </div>
-                <div class="buttons-wrapper"><a href="${flowExecutionUrl}&event_id=pay"><input type="button" value="Confirm Order"/></a></div>
+                <div class="buttons-wrapper"><a href="${flowExecutionUrl}&_eventid=pay"><input type="button" value="Confirm Order"/></a></div>
                 <div class="buttons-wrapper"><input type="submit" value="Cancel Order" action="/"/></div>
             
             </form:form>
